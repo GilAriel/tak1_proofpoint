@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo 'Starting Provision: lb1'
+echo 'Starting Provision: lb'
 sudo apt-get update
 sudo apt-get install -y nginx
 sudo service nginx stop
@@ -27,5 +27,5 @@ server {
 
 }" >> /etc/nginx/sites-enabled/default
 sudo service nginx start
-echo "Machine: lb1" >> /usr/share/nginx/html/index.html
-echo 'Provision lb1 complete'
+echo "Machine: lb" >> /usr/share/nginx/html/index.html
+echo 'Provision lb complete'
